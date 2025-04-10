@@ -1,0 +1,20 @@
+# Ignora dependências do Node.js
+**/node_modules/
+
+# Ignora o banco SQLite
+**/database.sqlite
+
+# Ignora arquivos de log
+*.log
+
+# Ignora variáveis de ambiente (se você usar um .env depois)
+.env
+
+# Ignora arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+
+# Ignora pastas de build, caso você use depois
+dist/
+build/
+
