@@ -6,7 +6,7 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const dbPath = process.env.DATABASE_PATH || './database.sqlite';
+const dbPath = process.env.DATABASE_PATH || path.join(__dirname, '../database/database.sqlite');
 const db = new sqlite3.Database(dbPath, (err) => {
   if (err) {
     console.error('Erro ao conectar ao banco de dados:', err.message);
